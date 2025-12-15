@@ -41,28 +41,87 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;  /*（ProfileとArticle）は2つのメニューが24px間隔*/
 
-
+}
+div div div:hover {
+  opacity: 0.7;
+}
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
-
+.bird{
+  width: 100%;
+  height: 640px; /*（鳥の画像）は、幅は親要素の100%、高さは640px、角の丸め半径は16pxです*/
+  border-radius: 16px;
+}
 
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
-
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+h1{
+  border-bottom: #000000 solid 3px;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
-
-
+.profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.picture{
+  border-radius: 50%;
+}
+.setumei{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 /* -------------------------------------------
   記事
   -------------------------------------------*/
-
+.article{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
+.kiji{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hyosi{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0px;
+    font-size: small;
+  }
